@@ -1,3 +1,23 @@
+# import random, resize, and swapaxes from numpy
+# Define build_board function
+    # use random.choice
+    # return the board
+# Define get_count function
+    # use string_search to return a board of T/F
+    # use .sum() on T/F board to get sum of T
+    # return result
+# Define change_size function
+    # use resize with input to change size
+    # return resized board
+# Define pivot_axes function
+    # use swapaxes to flip board axes
+    # return the swapped board
+# Check if file is running on main, if so print a notification to not do that
+
+
+
+
+
 from numpy import random
 from numpy import resize
 from numpy import swapaxes

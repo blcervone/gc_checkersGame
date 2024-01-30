@@ -1,3 +1,18 @@
+# Define the game function
+    # import checkers
+    # Ask what size board
+    # Call build_board from checkers with input as parameter
+    # Print the board
+    # Get the count of each using get_count from checkers
+    # Print counts
+    # Ask for new board size
+    # Call change_size from checkers with new board size
+    # Print the resized board
+    # Call pivot_axes from checkers on original board
+    # Print pivoted board
+# Check if file is running as main, if so call the game() function
+
+
 def game():
     import checkers
 
