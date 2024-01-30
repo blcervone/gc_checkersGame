@@ -15,14 +15,14 @@ def game():
     print(f"There are {black_count} empty cells on the board!")
     print()
 
-    # new_size = int(input("Please enter the new board size: >"))
-    # resize_board = checkers.reshape(new_board, new_size)
-    # print(resize_board)
-    # print()
-    #
-    # swap_axes = checkers.pivot_axes(new_board)
-    # print("Here is the original board with swapped axes:")
-    # print(swap_axes)
+    new_size = int(input("Please enter the new board size: >"))
+    resize_board = checkers.change_size(new_board, new_size)
+    print(resize_board)
+    print()
+
+    swap_axes = checkers.pivot_axes(new_board)
+    print("Here is the original board with swapped axes:")
+    print(swap_axes)
 
 if __name__ == '__main__':
     game()

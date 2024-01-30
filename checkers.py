@@ -1,5 +1,5 @@
 from numpy import random
-from numpy import reshape
+from numpy import resize
 from numpy import swapaxes
 
 
@@ -13,14 +13,14 @@ def get_count(board, string_search):
     return cond_grid.sum()
 
 
-# def change_size(board, new_size):
-#     resize_board = reshape(board, [(new_size, new_size)])
-#     return resize_board
-#
-#
-# def pivot_axes(board):
-#     pivot_board = swapaxes(board)
-#     return pivot_board
+def change_size(board, new_size):
+    resize_board = resize(board, (new_size, new_size))
+    return resize_board
+
+
+def pivot_axes(board):
+    pivot_board = swapaxes(board, 0, 1)
+    return pivot_board
 
 
 if __name__ == "__main__":
