@@ -16,10 +16,16 @@
 def game():
     import checkers
 
-    board_size = int(input("What size is the board you'd like to play on? >"))
-    new_board = checkers.build_board(board_size)
-    print()
-    print(new_board)
+    valid_board = False
+    while not valid_board:
+        board_size = int(input("What size is the board you'd like to play on? >"))
+        if 4 <= board_size <= 16:
+            new_board = checkers.build_board(board_size)
+            print()
+            print(new_board)
+            valid_board = True
+        else:
+            print("Board size must be between 4 and 16!\n")
 
     empty_count = checkers.get_count(new_board, 'Empty')
     red_count = checkers.get_count(new_board, 'Red')
